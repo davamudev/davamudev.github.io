@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daniel@portfolio:~</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="boot">
+        <div class="boot-window">
+            <div class="boot-bar">
+                <span class="boot-title">daniel@82.12.137.220 — SSH</span>
+            </div>
+            <div class="boot-content" id="bootContent"></div>
+        </div>
+    </div>
+
+    <main id="terminal">
+        <div class="term-bar">
+            <div class="term-dots">
+                <span class="dot close"></span>
+                <span class="dot minimize"></span>
+                <span class="dot maximize"></span>
+            </div>
+            <span class="term-title">daniel@portfolio: ~</span>
+        </div>
+
+        <div class="term-body">
+
+            <div class="section" id="welcome">
+                <div class="cmd-line">
+                    <span class="prompt">daniel@portfolio:~$</span>
+                    <span class="cmd" data-text="whoami">whoami</span>
+                </div>
+                <div class="output">
+                    <p><span class="highlight">Daniel Vázquez Muñoz</span></p>
+                    <p class="dim">Back End Developer & SysAdmin</p>
+                    <p class="dim">Seville, Spain</p>
+                </div>
+            </div>
+
+            <div class="section" id="about">
+                <div class="cmd-line">
+                    <span class="prompt">daniel@portfolio:~$</span>
+                    <span class="cmd" data-text="cat about.md">cat about.md</span>
+                </div>
+                <div class="output">
+                    <p>Tech enthusiast, passionate about back-end development</p>
+                    <p>and system administration. I listen to music whenever I can,</p>
+                    <p>I love animals and travelling to explore natural landscapes</p>
+                    <p>whenever I get the chance.</p>
+                    <table class="info-table">
+                        <tr><td class="label">Age:</td><td><span id="ageDisplay"></span></td></tr>
+                        <tr><td class="label">Experience:</td><td><span id="expDisplay"></span></td></tr>
+                        <tr><td class="label">Freelance:</td><td class="highlight">Available</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section" id="skills">
+                <div class="cmd-line">
+                    <span class="prompt">daniel@portfolio:~$</span>
+                    <span class="cmd" data-text="neofetch">neofetch</span>
+                </div>
+                <div class="output">
+                    <p class="section-subtitle">Languages &amp; Frameworks</p>
+                    <div class="skill"><span class="skill-name">Java</span><div class="bar"><div class="fill" style="--w:85%"></div></div><span class="pct">85%</span></div>
+                    <div class="skill"><span class="skill-name">Python</span><div class="bar"><div class="fill" style="--w:50%"></div></div><span class="pct">50%</span></div>
+                    <div class="skill"><span class="skill-name">Spring Boot</span><div class="bar"><div class="fill" style="--w:70%"></div></div><span class="pct">70%</span></div>
+                    <div class="skill"><span class="skill-name">SAP ABAP</span><div class="bar"><div class="fill" style="--w:30%"></div></div><span class="pct">30%</span></div>
+                    <div class="skill"><span class="skill-name">JavaScript</span><div class="bar"><div class="fill" style="--w:50%"></div></div><span class="pct">50%</span></div>
+                    <div class="skill"><span class="skill-name">JPA / MongoDB</span><div class="bar"><div class="fill" style="--w:80%"></div></div><span class="pct">80%</span></div>
+                    <div class="skill"><span class="skill-name">Elasticsearch</span><div class="bar"><div class="fill" style="--w:50%"></div></div><span class="pct">50%</span></div>
+                    <div class="skill"><span class="skill-name">Apache Camel / CXF</span><div class="bar"><div class="fill" style="--w:50%"></div></div><span class="pct">50%</span></div>
+                    <div class="skill"><span class="skill-name">Apache Kafka</span><div class="bar"><div class="fill" style="--w:85%"></div></div><span class="pct">85%</span></div>
+                    <p class="section-subtitle">Tools &amp; Platforms</p>
+                    <div class="skill"><span class="skill-name">Linux</span><div class="bar"><div class="fill" style="--w:90%"></div></div><span class="pct">90%</span></div>
+                    <div class="skill"><span class="skill-name">Git / GitHub / GitLab</span><div class="bar"><div class="fill" style="--w:90%"></div></div><span class="pct">90%</span></div>
+                    <div class="skill"><span class="skill-name">Jenkins / Nexus</span><div class="bar"><div class="fill" style="--w:70%"></div></div><span class="pct">70%</span></div>
+                    <div class="skill"><span class="skill-name">Docker / Podman</span><div class="bar"><div class="fill" style="--w:85%"></div></div><span class="pct">85%</span></div>
+                    <div class="skill"><span class="skill-name">OpenShift</span><div class="bar"><div class="fill" style="--w:80%"></div></div><span class="pct">80%</span></div>
+                    <div class="skill"><span class="skill-name">Minecraft API</span><div class="bar"><div class="fill" style="--w:100%"></div></div><span class="pct">100%</span></div>
+                    <div class="skill"><span class="skill-name">Postman / JMeter</span><div class="bar"><div class="fill" style="--w:70%"></div></div><span class="pct">70%</span></div>
+                    <div class="skill"><span class="skill-name">Siege</span><div class="bar"><div class="fill" style="--w:95%"></div></div><span class="pct">95%</span></div>
+                    <div class="skill"><span class="skill-name">Userscripts</span><div class="bar"><div class="fill" style="--w:90%"></div></div><span class="pct">90%</span></div>
+                    <div class="skill"><span class="skill-name">Prometheus / Grafana</span><div class="bar"><div class="fill" style="--w:85%"></div></div><span class="pct">85%</span></div>
+                    <div class="skill"><span class="skill-name">JUnit / Mockito / T.Containers</span><div class="bar"><div class="fill" style="--w:70%"></div></div><span class="pct">70%</span></div>
+                    <div class="skill"><span class="skill-name">Infinispan / Jaeger</span><div class="bar"><div class="fill" style="--w:60%"></div></div><span class="pct">60%</span></div>
+                </div>
+            </div>
+
+            <div class="section" id="experience">
+                <div class="cmd-line">
+                    <span class="prompt">daniel@portfolio:~$</span>
+                    <span class="cmd" data-text="tail -f /var/log/experience.log">tail -f /var/log/experience.log</span>
+                </div>
+                <div class="output">
+                    <p class="section-subtitle">Education</p>
+                    <div class="entry">
+                        <p class="entry-title">Degree in Multiplatform Application Development</p>
+                        <p class="entry-meta">Santa Joaquina de Vedruna &mdash; 2020-2022</p>
+                    </div>
+                    <div class="entry">
+                        <p class="entry-title">Degree in Microcomputer Systems and Networks</p>
+                        <p class="entry-meta">I.E.S. Alarifes Ruiz Florindo &mdash; 2018-2020</p>
+                    </div>
+                    <p class="section-subtitle">Work</p>
+                    <div class="entry">
+                        <p class="entry-title">Java Developer @ <span class="highlight">Viewnext</span></p>
+                        <p class="entry-meta">April 2023 &mdash; Present</p>
+                    </div>
+                    <div class="entry">
+                        <p class="entry-title">SAP ABAP Developer @ <span class="highlight">NTT Data</span></p>
+                        <p class="entry-meta">January 2022 &mdash; June 2022</p>
+                        <p class="entry-desc">Learned ABAP at intermediate level, SAP interface, 2 projects.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="projects">
+                <div class="cmd-line">
+                    <span class="prompt">daniel@portfolio:~$</span>
+                    <span class="cmd" data-text="ls -la /projects/">ls -la /projects/</span>
+                </div>
+                <div class="output">
+                    <div class="project-grid">
+                        <div class="project">
+                            <p class="project-name"><a href="https://github.com/Skjolberg/forocoches-premium" target="_blank" rel="noopener noreferrer">ForoCoches Premium</a><span class="oss-tag">Open Source</span></p>
+                            <p class="project-desc">Userscript that enhances the ForoCoches forum experience.</p>
+                        </div>
+                        <div class="project">
+                            <p class="project-name"><a href="https://github.com/Skjolberg/retina-library" target="_blank" rel="noopener noreferrer">Retina Library</a><span class="oss-tag">Open Source</span></p>
+                            <p class="project-desc">Shared library used across multiple projects.</p>
+                        </div>
+                        <div class="project">
+                            <p class="project-name"><a href="https://github.com/Skjolberg/SimpleBlockRegenAPI" target="_blank" rel="noopener noreferrer">SimpleBlockRegenAPI</a><span class="oss-tag">Open Source</span></p>
+                            <p class="project-desc">API library for the SimpleBlockRegen plugin.</p>
+                        </div>
+                        <div class="project">
+                            <p class="project-name"><a href="https://www.spigotmc.org/resources/simpleblockregen.100875/" target="_blank" rel="noopener noreferrer">SimpleBlockRegen</a> <span class="highlight">+250 clients</span></p>
+                            <p class="project-desc">Block regeneration plugin for Minecraft.</p>
+                        </div>
+                        <div class="project">
+                            <p class="project-name"><a href="https://github.com/shibacraft/EzChatChannel" target="_blank" rel="noopener noreferrer">EzChatChannel</a><span class="oss-tag">Open Source</span></p>
+                            <p class="project-desc">Chat channel management plugin for Minecraft servers.</p>
+                        </div>
+                        <div class="project">
+                            <p class="project-name"><a href="https://github.com/shibacraft/RatFilter" target="_blank" rel="noopener noreferrer">RatFilter</a><span class="oss-tag">Open Source</span></p>
+                            <p class="project-desc">Chat filter plugin to moderate messages on Minecraft servers.</p>
+                        </div>
+                        <div class="project">
+                            <p class="project-name"><a href="https://github.com/shibacraft/SimpleDropInventory" target="_blank" rel="noopener noreferrer">SimpleDropInventory</a><span class="oss-tag">Open Source</span></p>
+                            <p class="project-desc">Drop inventory management plugin for Minecraft.</p>
+                        </div>
+                        <div class="project">
+                            <p class="project-name"><a href="https://github.com/shibacraft/SimpleChunkTeleport" target="_blank" rel="noopener noreferrer">SimpleChunkTeleport</a><span class="oss-tag">Open Source</span></p>
+                            <p class="project-desc">Chunk-based teleportation plugin for Minecraft servers.</p>
+                        </div>
+                        <div class="project">
+                            <p class="project-name"><a href="https://github.com/shibacraft/SimpleHelp" target="_blank" rel="noopener noreferrer">SimpleHelp</a><span class="oss-tag">Open Source</span></p>
+                            <p class="project-desc">Help menu plugin for Minecraft servers.</p>
+                        </div>
+                        <div class="project">
+                            <p class="project-name"><a href="https://github.com/BeeHomelab/plex-tmdb-checker" target="_blank" rel="noopener noreferrer">Plex TMDB Checker</a><span class="oss-tag">Open Source</span></p>
+                            <p class="project-desc">Tool to check Plex media against TMDB metadata.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="services">
+                <div class="cmd-line">
+                    <span class="prompt">daniel@portfolio:~$</span>
+                    <span class="cmd" data-text="systemctl status services">systemctl status services</span>
+                </div>
+                <div class="output">
+                    <div class="service"><span class="status active">ACTIVE</span> Minecraft plugins, Discord bots, Telegram bots &amp; userbots, etc</div>
+                    <div class="service"><span class="status active">ACTIVE</span> SysAdmin &mdash; Solutions, installations, maintenance</div>
+                    <div class="service"><span class="status active">ACTIVE</span> Fast Support &mdash; 24/7 customer attention</div>
+                    <div class="service"><span class="status active">ACTIVE</span> Instant Upgrades &mdash; Frequent updates</div>
+
+                </div>
+            </div>
+
+            <div class="section" id="testimonials">
+                <div class="cmd-line">
+                    <span class="prompt">daniel@portfolio:~$</span>
+                    <span class="cmd" data-text="cat /etc/testimonials">cat /etc/testimonials</span>
+                </div>
+                <div class="output">
+                    <div class="testimonial">
+                        <p class="quote">"The best plugin I could buy, unbeatable support, incredible performance. 120 players, tick less than 0.07%. Recommended."</p>
+                        <p class="author">&mdash; Eric <span class="stars">⭐⭐⭐⭐⭐</span></p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="quote">"Free version was already great for dungeons and mines. Premium is much better. One of the best plugins."</p>
+                        <p class="author">&mdash; Lucas <span class="stars">⭐⭐⭐⭐⭐</span></p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="quote">"Wonderful plugin, very good support and great performance. 100% Recommended."</p>
+                        <p class="author">&mdash; Crix <span class="stars">⭐⭐⭐⭐⭐</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="contact">
+                <div class="cmd-line">
+                    <span class="prompt">daniel@portfolio:~$</span>
+                    <span class="cmd" data-text='mail -s "hello" dani'>mail -s "hello" dani</span>
+                </div>
+                <div class="output">
+                    <p><span class="label">Email:</span> <a href="mailto:contacto@davamu.dev">contacto@davamu.dev</a></p>
+                    <p><span class="label">GitHub:</span> <a href="https://github.com/Skjolberg" target="_blank" rel="noopener noreferrer">github.com/Skjolberg</a></p>
+                    <p><span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/davamu" target="_blank" rel="noopener noreferrer">linkedin.com/in/davamu</a></p>
+                </div>
+            </div>
+
+            <div class="section footer-section">
+                <div class="cmd-line">
+                    <span class="prompt">daniel@portfolio:~$</span>
+                    <span class="cmd" data-text="uptime">uptime</span>
+                </div>
+                <div class="output">
+                    <p class="dim">System running since 2026</p>
+                    <p class="dim">&copy; <span id="copyrightYear"></span> Daniel Vázquez</p>
+                </div>
+            </div>
+
+            <div class="term-prompt">
+                <span class="prompt">daniel@portfolio:~$</span>
+                <span class="cursor">&#9612;</span>
+            </div>
+        </div>
+    </main>
+
+    <div id="cmd-palette">
+        <span class="palette-trigger" title="Commands">&gt;_</span>
+        <div class="palette-menu">
+            <a href="#welcome" data-cmd="whoami">whoami</a>
+            <a href="#about" data-cmd="cat about.md">cat about.md</a>
+            <a href="#skills" data-cmd="neofetch">neofetch</a>
+            <a href="#experience" data-cmd="tail -f /var/log/experience.log">tail -f experience.log</a>
+            <a href="#projects" data-cmd="ls -la /projects/">ls -la /projects/</a>
+            <a href="#services" data-cmd="systemctl status services">systemctl status</a>
+            <a href="#testimonials" data-cmd="cat /etc/testimonials">cat /etc/testimonials</a>
+            <a href="#contact" data-cmd="mail -s hello dani">mail -s hello dani</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
